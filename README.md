@@ -43,3 +43,8 @@ This will replace the `\\n`'s with a non-escaped `\n` which bitwarden will then 
 - Bitwarden doesn't always refresh the vault after purging, be sure to reload the vault after each import
 
 ##  Way too much work for something that should just be included in the import/export process, but ... it worked.
+
+## ToDo
+
+* Some LastPass secure notes use a hash for individual fields, for example, Phone and MobilePhone might get imported as `{ "num": "555123456", "ext": "", "cc3l": "USA" }` and that could be further broken down, but wasn't worth the climb for my use case.
+* Convert directly to bitwarden json

@@ -169,8 +169,8 @@ def munge_json():
       for item in vault['items']:
         row += 1
         debug(str(row)+" INDEX: "+item['name'])
-        if item['name'] == "Florida Drivers License": #"Ryan DCU checking":
-          debug(item['name'])
+        if item['name'] == "Some entry":  # Use this to debug individual entries
+          debug(item['name'])  # A hook to set a breakpoint
         if 'notes' in item and item['notes'] is not None:
           if item['notes'].startswith("NoteType:"):
             lpitem = item['notes'][9:].split("\n")
