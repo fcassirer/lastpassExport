@@ -15,6 +15,7 @@ Reformat the CSV so that it can be more easily imported into Bitwarden. Ideally,
 * Purge your Bitwarden vault to have a clean starting point (optional)
 * import the output CSV into Bitwarden
 * export your Bitwarden vault as a Bitwarden json file
+* Run the sed command below to massage the \\n's ...
 * Run this script *again* using the above Bitwarden json file as input, output to a new json, i.e, `-o tweakedBitwarden.json`)
 * Purge your Bitwarden vault to have a clean starting point (recommended to avoid duplicates)
 * Marvel at how all of this was necessary to achieve something Bitwarden should be natively providing ;-)
