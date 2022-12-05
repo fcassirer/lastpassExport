@@ -42,6 +42,7 @@ This will replace the `\\n`'s with a non-escaped `\n` which bitwarden will then 
 
 - Bitwarden doesn't handle embededed newlines in text fields, need to export as json, massage the newlines, and re-import to get it correct
 - Bitwarden doesn't always refresh the vault after purging, be sure to reload the vault after each import
+- Lastpass export is half-baked.  If you export more than once you are likely to get an extra copy of all your vault with each export, i.e., export once, fine, export 3x, your CSV has 3 instances of your vault ... sheesh, doesn't anyone do QA anymore?
 
 ##  Way too much work for something that should just be included in the import/export process, but ... it worked.
 
